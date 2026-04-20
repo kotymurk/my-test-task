@@ -64,7 +64,6 @@ export default function TariffList() {
   });
 
   return (
-    // overflow-x-hidden предотвращает горизонтальную прокрутку на мобильных
     <div className='min-h-screen bg-[#232829] text-white pb-12 overflow-x-hidden'>
       <Timer onExpire={() => setIsExpired(true)} />
 
@@ -96,7 +95,6 @@ export default function TariffList() {
                   ${selectedId === bestTariff.id ? 'border-[#FDB056]' : 'border-transparent hover:bg-[#3A4041]'}
                 `}
               >
-                {/* Убрали absolute, теперь flex-поток, чтобы не наезжало */}
                 <div className='flex flex-col md:flex-row items-start md:items-center justify-between gap-3 md:gap-4'>
                   <div className='flex items-center gap-3 w-full md:w-auto'>
                     <div className='bg-[#FD5656] text-xs font-bold px-2 py-1 rounded whitespace-nowrap'>
